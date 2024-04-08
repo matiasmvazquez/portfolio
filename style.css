@@ -7,7 +7,7 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --color-de-fondo: #F5F5F5;
+   --color-de-fondo: #ecebea;
    --color-de-link: #464646;
    --color-fondo-celeste: #EAF2FD;
    --color-azul-boton: #2A7AE4;
@@ -31,6 +31,13 @@ ol, ul,li {
 a{
     text-decoration: none;
     color: var(--color-de-link);
+}
+
+hr{
+    width: 80%;
+    height: 3px;
+    border-radius: 5px;
+    background-color:gray;
 }
 
 .todo{
@@ -165,6 +172,7 @@ section.skills{
 
 .skills__line{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -197,6 +205,7 @@ section.hobbies{
 
 .hobbies__line{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -211,7 +220,7 @@ section.hobbies{
     padding-left: 1rem;
 }
 
-/* Experiencia Académica*/
+/*Formación Académica*/
 
 section.academic{
     background-color: var(--color-fondo-celeste);
@@ -228,12 +237,14 @@ section.academic{
 
 .academic__courses{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 .academic__courses__box{
     width: 380px;
-    height: 350px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,7 +272,7 @@ section.academic{
     margin-block-start: 1rem;
 }
 
-/* experiencia*/
+/* experiencia profesional*/
 
 section.experience{
     padding: 3rem 5rem 3rem 5rem;
@@ -278,6 +289,8 @@ section.experience{
 }    
 
 .experiencie__box{
+    width: 80%;
+    flex-wrap: wrap;
     display: flex;
     margin: 2rem 0;
     align-items: center;
