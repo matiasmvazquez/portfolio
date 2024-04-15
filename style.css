@@ -223,7 +223,7 @@ section.hobbies{
 /*Formación Académica*/
 
 section.academic{
-    background-color: var(--color-fondo-celeste);
+    background-color: var(--color-fondo);
     /* width: 100%; */
     padding: 3rem 5rem 3rem 5rem;
 }
@@ -275,6 +275,7 @@ section.academic{
 /* experiencia profesional*/
 
 section.experience{
+    background-color: var(--color-fondo-celeste);
     padding: 3rem 5rem 3rem 5rem;
     display: flex;
     flex-direction: column;
