@@ -295,6 +295,7 @@ section.experience{
     display: flex;
     margin: 2rem 0;
     align-items: center;
+    justify-content: center;
 }
 
 .experience__info{
