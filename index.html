@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte del Proyecto Raleway -->
+    <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap" rel="stylesheet">
-    <title> Mi Portafolio</title>
+    <title>Mi Portafolio</title>
 </head>
 <body>
     <!-- Sección del Menú  -->
@@ -169,12 +169,25 @@
             <h2 class="experience__section__title" >Experiencia Profesional</h2>
 
             <div class="experiencie__box">
+                <img class="experience__img" src="assets/appsistencia.webp" alt="MSW Studio">
+                <div class="experience__info">
+                <h2 class="experience__title">Appsistencia 2.0</h2>
+                    <h3 class="experience__text">ReDiseño UX/UI | Figma</h3>
+                        <div class="experience__description">
+                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                                <span class="experience__demo"><a href="https://www.figma.com/proto/v5gKWR367gSvKR6ApVGNfj/Appsistencia-2.0?node-id=1-1663&t=VASKc7SqMvRpzgg5-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank"><button class="experience__botao--demo">Ver Prototipo</button></a></span>
+                        </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="experiencie__box">
                 <div class="experience__info">
                 <h2 class="experience__title">El Fletecito</h2>
                     <h3 class="experience__text">Diseño UX/UI | Figma</h3>
                         <div class="experience__description">
                                 <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__demo"><a href="https://www.figma.com/proto/alFErereJfQ2WPvRkwdaPe/El-Fletecito---Matias-Vazquez?type=design&t=J3aEO02CHzYE4T4G-1&scaling=scale-down&page-id=0%3A1&node-id=1-14337&mode=design" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__demo"><a href="https://www.figma.com/proto/alFErereJfQ2WPvRkwdaPe/El-Fletecito---Matias-Vazquez?type=design&t=J3aEO02CHzYE4T4G-1&scaling=scale-down&page-id=0%3A1&node-id=1-14337&mode=design" target="_blank"><button class="experience__botao--demo">Ver Prototipo</button></a></span>
                         </div>
                 </div>
                 <img class="experience__img" src="assets\el_fletecito.jpg" alt="MSW Studio">
@@ -207,31 +220,29 @@
             </div>
             <hr>
             
+            <!-- Te Quiero Invitar -->
             <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\te_quiero_invitar.jpg" alt="Te quiero invitar - Invitaciones Digitales">
+                <img class="experience__img experience__img_pointer" onclick="openMultiModal('modalInvitar')" src="assets\te_quiero_invitar.jpg" alt="Te quiero invitar - Invitaciones Digitales">
                 <div class="experience__info">
                     <h2 class="experience__title">Te quiero Invitar</h2>
-                    <h3 class="experience__text">Desarrollado en Wordpress</h3>
+                    <h3 class="experience__text">Desarrollado en Wordpress / Elementor</h3>
                         <div class="experience__description">
-                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__demo"><a href="https://tequieroinvitar.com.ar/" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__demo" onclick="openMultiModal('modalInvitar')"><button class="experience__botao--demo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
             <hr>
 
+            <!-- Pau Vincent -->
             <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
                 <div class="experience__info">
                     <h2 class="experience__title">Pau Vincent</h2>
                     <h3 class="experience__text">Desarrollado con Sitio Simple</h3>
                         <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__demo"><a href="https://pauvincent.com.ar/" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__demo" onclick="openMultiModal('modalPau')"><button class="experience__botao--demo">Ver diseño</button></a></span>
                         </div>
                 </div>
-                <img class="experience__img" src="assets\pau_vincent.jpg" alt="Encriptador de Texto">
+                <img class="experience__img experience__img_pointer" src="assets\pau_vincent.jpg" onclick="openMultiModal('modalPau')" class="hover-shadow" alt="Pau Vincent Fotografia">
             </div>  
             <hr>
 
@@ -243,7 +254,7 @@
                     <h3 class="experience__text">Practicas mobile first</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/matiasmvazquez/Responsive-Layouts-Practica" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/matiasmvazquez/Responsive-Layouts-Practica" target="_blank"><button class="experiencia__botao--repo">Repositorio</button></a></span>
                                 <span class="experience__demo"><a href="https://matiasmvazquez.github.io/Responsive-Layouts-Practica/" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
                         </div>
                 </div>
@@ -257,7 +268,7 @@
                     <h3 class="experience__text">Challenge encriptador</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/matiasmvazquez/challenge-encriptador" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/matiasmvazquez/challenge-encriptador" target="_blank"><button class="experiencia__botao--repo">Repositorio</button></a></span>
                                 <span class="experience__demo"><a href="https://matiasmvazquez.github.io/challenge-encriptador/" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
                         </div>
                 </div>
@@ -325,6 +336,30 @@
             </div>
         </section>
 
+
+        <!-- The Modal/Lightbox -->
+        <!-- The Modal Invitar -->
+        <div id="modalInvitar" class="modal">
+            <span class="close cursor" onclick="closeMultiModal('modalInvitar')">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <!-- <div class="numbertext">1 / 4</div> -->
+                    <img src="/assets/TeQuieroInvitar_InvitacionesDigitales.webp" style="width:100%">
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal Pau -->
+        <div id="modalPau" class="modal">
+            <span class="close cursor" onclick="closeMultiModal('modalPau')">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <!-- <div class="numbertext">1 / 4</div> -->
+                    <img src="/assets/Pau Vincent - Home 01.webp" style="width:100%">
+                </div>
+            </div>
+        </div>
+
         <!-- Sección de Footer -->
         <section class="footer">
             <div class="footer__rodape">
@@ -334,7 +369,26 @@
             </div>
         </section>
     </div>
+
+
  <!-- Script del documento JavaScript -->
 <script src="validacion.js"></script>
+<script src="modal.js"></script>
+
+<!-- <script>
+
+    // Open the Multi Modal
+     
+    function openMultiModal(modal) {
+        document.getElementById(modal).style.display = "block";
+    }
+    
+    // Close the Multi Modal
+    function closeMultiModal(modal) {
+      document.getElementById(modal).style.display = "none";
+    }
+
+</script> -->
+
 </body>
 </html>
